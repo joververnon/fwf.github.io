@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final With Fit</title>
+    <link rel="stylesheet" href="Style Menu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href='https://unpkg.com/css.gg@2.0.0/icons/css/menu.css' rel='stylesheet'>
+<link href='https://unpkg.com/css.gg@2.0.0/icons/css/close-r.css' rel='stylesheet'>
+<link href='https://unpkg.com/css.gg@2.0.0/icons/css/instagram.css' rel='stylesheet'>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <div class="logo">
+                <ul>
+                <li><a href="Index Menu.html">Final With Fit</a></li>
+                </ul>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <i class="gg-close-r" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="Index Menu.html">HOME</a></li>
+                    <li><a href="Index Food.html">FOOD</a></li>
+                    <li><a href="Index Work Out.html">WORKOUT</a></li>
+                    <li><a href="Index Health.html">HEALTH</a></li>
+                    <li><a href="Index About Us.html">ABOUT US</a></li>
+                </ul>
+            </div>
+            <i class="gg-menu" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>Final With Fit</h1>
+            <p>Menerapkan Pola Hidup Sehat di Kalangan Mahasiswa</p>
+            <a href="Index About Us.html"class="hero-btn">About Us</a>
+        </div>
+    </section>
+
+    <!------ Course ------>
+
+    <section class="course">
+        <h1>Empat Pilar Pola Hidup Sehat</h1>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>Keanekaragaman Pangan</h3>
+                <p>Keanekaragaman tidak hanya pada jenis pangan, melainkan termasuk proporsi makanan yang seimbang, dalam jumlah yang cukup, tidak berlebihan dan dilakukan secara teratur. Anjuran pola makan memperhitungkan proporsi setiap kelompok pangan sesuai dengan kebutuhan yang seharusnya.
+                </p>
+            </div>
+            <div class="course-col">
+                <h3>Perilaku Hidup Bersih</h3>
+                <p>Perilaku hidup bersih dapat dilakukan dengan selalu mencuci tangan dengan sabun dan air bersih mengalir sebelum makan, menutup makanan yang disajikan agar tidak dihinggapi lalat, selalu menutup mulut dan hidung bila bersin maupun batuk dan selalu menggunakan alas kaki.
+                </p>
+            </div>
+            <div class="course-col">
+                <h3>Olahraga</h3>
+                <p>Aktivitas fisik seperti olahraga memerlukan energi. Hal ini dilakukan untuk menyeimbangkan antara pengeluaran dan pemasukan gizi utamanya sumber energi dalam tubuh.</p>
+            </div>
+            <div class="course-col">
+                <h3>Atur Berat Badan</h3>
+                <p>Memantau Berat Badan secara teratur untuk mempertahankan berat badan normal. Pada dewasa, keseimbangan dapat dipantau menggunakan Indeks Masa Tubuh (IMT). Sedangkan pada bayi dan balita, pemantauan berat badan dapat menggunakan KMS.
+                </p>
+            </div>
+        </div>
+    </section>
+
+<!----- campus ----->
+
+    <section class="campus">
+        <h1>Topik Utama</h1>
+
+        <div class="row">
+            <div class="campus-col">
+                <img src="eduford_img/shrimp-salad-with-boiled-egg-lettuce-chopped-scallions-white-plate.jpg">
+                <div class="layer">
+                    <h3>FOOD</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="eduford_img/tennis-player.jpg">
+                <div class="layer">
+                    <h3>WORKOUT</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="eduford_img/medicine-uniform-healthcare-medical-workers-day-concept.jpg">
+                <div class="layer">
+                    <h3>HEALTH</h3>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    
+    
+    <!----- call to action ----->
+
+    <section class="cta">
+        <h1>Stay In Touch With Us</h1>
+        <a href="https://www.instagram.com/finalwithfit?igsh=MXBpZGxudXk0MGgyaQ%3D%3D#" class="hero-btn">INSTAGRAM</a>
+    </section>
+
+    <!---- Footer ---->
+
+    <section class="footer">
+        <h4>About Metanoia</h4>
+        <p>A journey that changes your mind, heart, self, and way of life</p>
+        <nav>
+            <a href="https://www.instagram.com/finalwithfit?igsh=MXBpZGxudXk0MGgyaQ%3D%3D#">
+                <i class="gg-instagram"></i>
+            </a>
+        </nav>
+        <h5>by Metanoia</h5>
+    </section>
+
+    <!-----JavaScript for Toggle Menu----->
+    <script>
+        var navLinks = document.getElementById("navLinks")
+
+        function showMenu(){
+            navLinks. style.right="0";
+        }
+        function hideMenu(){
+            navLinks. style.right="-200px";
+        }
+    </script>
+
+</body>
+</html>
